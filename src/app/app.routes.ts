@@ -9,12 +9,12 @@ export const routes: Routes = [
     {
         path: 'home',
         component: HomeComponent,
-        children: [
-            {
-                path: 'homi',
-                component: HomeComponent,
-            },
-        ]
+        // children: [
+        //     {
+        //         path: 'homi',
+        //         component: HomeComponent,
+        //     },
+        // ]
     },
 
 ];

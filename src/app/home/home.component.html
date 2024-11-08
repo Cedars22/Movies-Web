@@ -1,5 +1,20 @@
-<p>home works!</p>
-<button
-  class="inline-block cursor-pointer rounded-full bg-gray-800 px-4 py-3 text-center text-sm font-semibold uppercase text-white transition duration-200 ease-in-out hover:bg-gray-900">
-  Button
-</button>
+<div class="row">
+  <div class="col-12">
+      <div class="card mb-3">
+          <!-- <div *ngIf="movie" class="row no-gutters"> -->
+          @for (movie of movies; track movie.id) {
+                  <div class="row no-gutters">
+              <div class="col-md-6">
+                  <img src="{{imageBaseUrl + movie.poster_path }}" class="card-img" alt="{{ movie.title }}">
+              </div>
+              <div class="col-md-6">
+                  <div class="card-body rounded-full">
+                      <h5 class="card-title">{{ movie.title }}</h5>
+                      <p class="card-text">{{ movie.overview}}</p>
+                  </div>
+              </div>
+          </div>
+          }
+      </div>
+  </div>
+</div>
