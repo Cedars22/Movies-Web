@@ -1,0 +1,5 @@
+.carousel-item-vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
